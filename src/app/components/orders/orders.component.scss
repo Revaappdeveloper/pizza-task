@@ -1,0 +1,95 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgba(black, 0.05);
+  overflow: auto;
+
+  .row-bg-color {
+    background: rgba(black, 0.22);
+
+    .col-bg-color {
+      background-color: transparent; // For browsers that do not support gradients
+      background-image: linear-gradient(to right, #000000e8, transparent);
+
+      .item-details {
+        width: 100%;
+        height: auto;
+        border: 1px solid grey;
+        color: whitesmoke;
+
+        .item-name {
+          width: 100%;
+          border-bottom: 1px solid grey;
+          color: whitesmoke;
+          font-size: 18px;
+          font-weight: 700;
+
+          .order-details {
+            width: auto;
+            height: 40px;
+            color: white;
+            background: orangered;
+            text-align: center;
+            font-weight: 500;
+          }
+        }
+
+        .details {
+
+          .customer-name,
+          .number-ordered,
+          .total-amount,
+          .status {
+            color: whitesmoke;
+            font-size: 15px;
+            font-weight: 400;
+            text-transform: uppercase;
+          }
+        }
+
+        .status-text {
+          font-style: italic;
+        }
+
+        .orderReceived,
+        .preparing,
+        .readyToServe {
+          width: 150px;
+          height: 40px;
+          border-radius: 3px;
+          line-height: 35px;
+          text-align: center;
+          font-size: 18px;
+          background: rgb(6, 137, 224);
+        }
+
+        .preparing {
+          background: orangered;
+        }
+
+        .readyToServe {
+          background: rgb(8, 199, 8);
+        }
+
+        .change-status {
+          width: auto;
+          height: 40px;
+          color: red;
+          background: ivory;
+          text-align: center;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .welcome-quote {
+    color: rgba(67, 235, 151, 0.952);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+  }
+}

@@ -1,0 +1,74 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: rgba(black, 0.05);
+  overflow: auto;
+
+  .row-bg-color {
+    background: rgba(black, 0.22);
+
+    .col-bg-color {
+      background-color: transparent; // For browsers that do not support gradients
+      background-image: linear-gradient(to right, #000000e8, transparent);
+
+      .item-details {
+        width: 100%;
+        height: auto;
+        border: 1px solid grey;
+        color: whitesmoke;
+
+        .item-name-center {
+          width: 100%;
+          border-bottom: 1px solid grey;
+          color: whitesmoke;
+          font-size: 25px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+        .details {
+
+          .customer-name,
+          .number-ordered,
+          .total-amount,
+          .del-address,
+          .price {
+            color: whitesmoke;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+        }
+
+        .amt-box{
+          width: 100px;
+          height: 50px;
+          background: orangered;
+          text-align: center;
+          color: white;
+          font-weight: 500;
+          font-size: 25px;
+        }
+
+        .back {
+          width: auto;
+          height: 40px;
+          color: red;
+          background: ivory;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .welcome-quote {
+    color: rgba(238, 234, 24, 0.952);
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+  }
+}

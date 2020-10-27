@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="welcome-quote p-2">Order Details</div>
+    <div
+        class="row mb-3 row-bg-color"
+    >
+        <div class="col col-bg-color py-3">
+            <div class="item-details ">
+                <div class="item-name-center d-flex justify-content-left p-3 my-1">{{itemDetails?.itemName}}</div>
+                <div class="details p-2 m-1">
+                    <div class="customer-name py-1">Customer name</div>
+                    <div class="py-1">{{itemDetails?.customerName}}</div>
+                    <div class="del-address">Delivery Address</div>
+                    <div class="py-1">{{itemDetails?.deliveryAddress.doorNumber}}, {{itemDetails?.deliveryAddress.street}}, {{itemDetails?.deliveryAddress.city}}, {{itemDetails?.deliveryAddress.state}}, {{itemDetails?.deliveryAddress.country}} (Landmark: {{itemDetails?.deliveryAddress.landmark}}).</div>
+                    <div class="number-ordered py-1">No. of items ordered</div>
+                    <div class="py-1">{{itemDetails?.numOrder}}</div>
+                    <div class="price">Item Price</div>
+                    <div class="py-1">
+                        {{ itemDetails?.price | currency:'INR':'symbol-narrow':'3.0-0'}}
+                    </div>
+                    <div class="total-amount py-1">Total amount</div>
+                    <div class="py-1">
+                        {{itemDetails?.numOrder}} X {{ itemDetails?.price | currency:'INR':'symbol-narrow':'3.0-0'}}
+                    </div>
+                    <div class="py-2">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn amt-box">
+                                {{ itemDetails?.totalAmount | currency:'INR':'symbol-narrow':'3.0-0'}}
+                            </div>
+                            <div
+                                class="btn back mr-3"
+                                (click)="backToOrderList()"
+                            >
+                                Back to Order List
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

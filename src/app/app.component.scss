@@ -1,0 +1,11 @@
+.img-holder {
+  position: absolute;
+  width: auto;
+  max-height: 100vh;
+  background-color: black;
+  overflow: hidden;
+  img{
+    width: 100vw;
+    height: auto;
+  }
+}
